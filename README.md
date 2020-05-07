@@ -45,6 +45,8 @@ Modify /etc/nginx/sites-enabled/default:
 	}
 Modifying this file, we can access directly to www.python.org when we type http://$URL/python
 
+	rewrite ^/python$ http://www.python.org/ permanent;
+
 Modify the file /etc/php/7.2/fpm/php.ini
 
 	sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/7.2/fpm/php.ini
