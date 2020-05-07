@@ -43,6 +43,7 @@ Modify /etc/nginx/sites-enabled/default:
 		## With php-cgi (or other tcp sockets):
 		#	fastcgi_pass 127.0.0.1:9000;
 	}
+Modifying this file, we can access directly to www.python.org when we type http://$URL/python
 
 Modify the file /etc/php/7.2/fpm/php.ini
 
